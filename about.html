@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Angela Ammann | About</title>
+  <meta name="description" content="Hi, my name is Angela and this is my portfolio website">
+  <!-- <link rel="icon" href="/assets/ico.ico" type="image/png"> -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <header>
+    <div id="nameTag">
+      <h3>Angela Ammann</h3>
+    </div>
+    <div id="header_menu">
+      <div><a href="/index.html">
+          <h3>Projects</h3>
+        </a></div>
+      <div><a href="/about.html">
+          <h3>About</h3>
+        </a></div>
+      <div><a href="/contact.html">
+          <h3>Contact</h3>
+        </a></div>
+      <input type="checkbox" id="darkmode-toggle-desktop" />
+      <label for="darkmode-toggle-desktop"></label>
+    </div>
+    <div class="mobile-version">
+      <div class="navT">
+        <div class="icon"></div>
+      </div>
+      <div id="menu">
+        <div id="toggle">
+          <input type="checkbox" id="darkmode-toggle-mobile" />
+          <label for="darkmode-toggle-mobile"></label>
+        </div>
+        <div class="menu-mobile"><a href="/index.html">
+            <h2>Projects</h2>
+          </a></div>
+        <div class="menu-mobile"><a href="/about.html">
+            <h2>About</h2>
+          </a></div>
+        <div class="menu-mobile"><a href="/contact.html">
+            <h2>Contact</h2>
+          </a></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-container">
+      <div class="quote fade-in">
+        <h1>I'm a graphic designer<br>
+          and digital creator.</h1>
+      </div>
+      <div class="subpageTitle fade-in">
+        <h3>About</h3>
+      </div>
+      <div class="infoAbout fade-in">
+        <div class="title">
+          <h2>Get to know me</h2>
+        </div>
+        <div>
+          <div class="text">
+            <h3>My name is Angela and I‘m studying visual communication and digital spaces in the Bachelor program. I am constantly exploring new mediums and ideas that challenge the boundaries of art and technology.</h3>
+            <div>
+              <h3 onclick="toggleDropdown(this)" class="more_info">My style 
+                <img src="/assets/icons/pfeilRechts-32.png" alt="Pfeil">
+              </h3>
+              <div class="dropdown-content">
+                <h3>My style is a mix of structure and experimentation. I’m always curious and love exploring different media, forms and compositions. I enjoy pushing ideas to find the perfect balance between meaning and design.
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 onclick="toggleDropdown(this)" class="more_info">My skills 
+                <img src="/assets/icons/pfeilRechts-32.png" alt="Pfeil">
+              </h3>
+              <div class="dropdown-content">
+                <h3>During my studies, I improved my skills and learned to use different programs. Whether it’s video editing, photography, scenography, 3D design or coding I‘m always open to enrich my skills in any kind of field. </h3>
+              </div>
+            </div>
+            <div>
+              <h3 onclick="toggleDropdown(this)" class="more_info">My interests 
+                <img src="/assets/icons/pfeilRechts-32.png" alt="Pfeil">
+              </h3>
+              <div class="dropdown-content">
+                <h3>Next to my studies I like to paint, cook and take pictures of my surroundings. 
+                  On weekends I work as a mathematic tutor for kids and adults but mostly on highschool level.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <h3>© Angela Ammann | all rights reserved </h3>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
