@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Montserrat-Medium';
-  src: url("/fonts/Montserrat/Montserrat-Medium.ttf") format('truetype');
+  src: url("../Montserrat-Medium.woff") format('woff');
 }
 
 @font-face {
   font-family: 'Montserrat-Light';
-  src: url("/fonts/Montserrat/Montserrat-Light.ttf") format('truetype');
+  src: url("../Montserrat-Light.woff") format('woff');
 }
 
 header {
@@ -546,56 +546,56 @@ body.dark-mode .links img {
   height: 24px;
   width: 24px;
   transform: rotate(-45deg);
-  content: url('assets/icons/pfeilRechtsW-32.png');
+  content: url('../assets/icons/pfeilRechtsW-32.png');
 }
 
 body.light-mode .links img {
   height: 24px;
   width: 24px;
   transform: rotate(-45deg);
-  content: url('assets/icons/pfeilRechts-32.png');
+  content: url('../assets/icons/pfeilRechts-32.png');
 }
 
 body.dark-mode .left img {
   height: 24px;
   width: 24px;
   transform: rotate(180deg);
-  content: url('assets/icons/pfeilRechtsW-32.png');
+  content: url('../assets/icons/pfeilRechtsW-32.png');
 }
 
 body.light-mode .left img {
   height: 24px;
   width: 24px;
   transform: rotate(180deg);
-  content: url('assets/icons/pfeilRechts-32.png');
+  content: url('../assets/icons/pfeilRechts-32.png');
 }
 
 body.dark-mode .more_info img {
   height: 24px;
   width: 24px;
   transform: rotate(90deg);
-  content: url("assets/icons/pfeilRechtsW-32.png");
+  content: url("../assets/icons/pfeilRechtsW-32.png");
 }
 
 body.light-mode .more_info img {
   height: 24px;
   width: 24px;
   transform: rotate(90deg);
-  content: url('assets/icons/pfeilRechts-32.png');
+  content: url('../assets/icons/pfeilRechts-32.png');
 }
 
 body.dark-mode .open .more_info img {
   height: 24px;
   width: 24px;
   transform: rotate(-90deg);
-  content: url('assets/icons/pfeilRechtsW-32.png');
+  content: url('../assets/icons/pfeilRechtsW-32.png');
 }
 
 body.light-mode .open .more_info img {
   height: 24px;
   width: 24px;
   transform: rotate(-90deg);
-  content: url('assets/icons/pfeilRechts-32.png');
+  content: url('../assets/icons/pfeilRechts-32.png');
 }
 
 
