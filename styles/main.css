@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Montserrat-Medium';
-  src: url("fonts/Montserrat/Montserrat-Medium.ttf") format('truetype');
+  src: url("/fonts/Montserrat/Montserrat-Medium.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'Montserrat-Light';
-  src: url("fonts/Montserrat/Montserrat-Light.ttf") format('truetype');
+  src: url("/fonts/Montserrat/Montserrat-Light.ttf") format('truetype');
 }
 
 header {
@@ -256,74 +256,6 @@ a {
   display: none;
 }
 
-/* .navT {
-  width: 70px;
-  height: 50px;
-  height: fit-content;
-    width: fit-content;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-  z-index: 99999;
-  top: 0;
-  right: 0;
-  position: fixed;
-  margin-right: 15px;
-
-  .icon {
-    -webkit-transition: all 0.25s;
-    transition: all 0.25s;
-    position: absolute;
-    width: 50px;
-    height: 1px;
-    top: 25px;
-    background: black;
-    right: 10px; 
-    
-    &:before, &:after {
-      -webkit-transition: all 0.25s;
-      transition: all 0.25s;
-      width: 50px;
-      height: 1px;
-      background: black;
-      position: absolute;
-      content: '';
-      top: 30px;
-    }
-
-    &:before {
-      top: -8px;
-    }
-
-    &:after {
-      top: 8px;
-    }
-  }
-
-  &.active {
-    .icon {
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
-      background-color: transparent;
-
-      &:before, &:after {
-        top: 0;
-      }
-
-      &:before {
-        -webkit-transform: rotate(45deg);
-        transform:rotate(45deg) ;
-        width: 40px;
-      }
-
-      &:after {
-        -webkit-transform: rotate(-45deg);
-        transform:rotate(-45deg) ;
-        width: 40px;
-      }
-    }
-  }
-} */
-
 .navT {
   width: 70px;
   height: 50px;
@@ -534,71 +466,6 @@ body.dark-mode .top,
 body.dark-mode .subpageTitle {
   border-top: 1px solid white;
 }
-
-/* body.dark-mode .navT {
-    width: 70px;
-  height: 50px;
-    -webkit-transition: all 0.25s;
-    transition: all 0.25s;
-    top: 0;
-    right: 0;
-    position: fixed;
-    margin-right: 15px;
-  
-    .icon {
-      -webkit-transition: all 0.25s;
-      transition: all 0.25s;
-      position: absolute;
-      width: 50px;
-      height: 1px;
-      top: 25px;
-      background: white;
-      right: 10px; 
-      
-      &:before, &:after {
-        -webkit-transition: all 0.25s;
-        transition: all 0.25s;
-        width: 50px;
-        height: 1px;
-        background: white;
-        position: absolute;
-        content: '';
-        top: 30px;
-      }
-  
-      &:before {
-        top: -8px;
-      }
-  
-      &:after {
-        top: 8px;
-      }
-    }
-  
-    &.active {
-      .icon {
-        -webkit-transform: rotate(180deg);
-        transform: rotate(180deg);
-        background-color: transparent;
-  
-        &:before, &:after {
-          top: 0;
-        }
-  
-        &:before {
-          -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-          width: 40px;
-        }
-  
-        &:after {
-          -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-          width: 40px;
-        }
-      }
-    }
-  } */
 
 body.dark-mode .navT {
   width: 70px;
