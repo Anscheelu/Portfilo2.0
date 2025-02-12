@@ -39,6 +39,7 @@ body {
 .infoProjects {
   z-index: 9999;
   width: calc(100vw - 40px);
+  padding-top: 15px;
 }
 
 .infoProjects #titleProject {
@@ -61,6 +62,7 @@ body {
 }
 
 .nav {
+  margin-bottom: 5px;
   align-items: center;
   z-index: 9999999;
   background: white;
@@ -111,6 +113,10 @@ footer {
   align-items: center;
 }
 
+.top {
+  border-top: 1px solid black;
+}
+
 .title-Projects {
   display: flex;
   justify-content: space-between;
@@ -159,7 +165,11 @@ footer {
 
 .text {
   width: 100%;
-  padding-top: 5px;
+  padding-top: 20px;
+}
+
+.infoProjects .text {
+  padding-bottom: 60px;
 }
 
 .title {
@@ -650,7 +660,6 @@ body.dark-mode .project-visible {
 .logoJugendfilmtage img {
   width: 30%;
   height: auto;
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -908,16 +917,13 @@ body.dark-mode .project-visible {
     padding-right: 25px;
   }
 
-  .top {
-    border-top: 1px solid black;
-  }
-
 
   .infoProjects {
     z-index: 9999;
     width: calc(50vw - 40px);
     position: fixed;
     right: 25px;
+    padding-top: 0px;
   }
 
   .infoProjects #titleProject {
@@ -979,4 +985,11 @@ body.dark-mode .project-visible {
     height: 16px;
     width: 16px;
   }
+
+  .text {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+
 }
