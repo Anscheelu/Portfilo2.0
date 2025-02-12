@@ -257,8 +257,8 @@ a {
 }
 
 .navT {
-  width: 70px;
-  height: 50px;
+  width: 70px !important;
+  height: 50px !important;
   height: fit-content;
   width: fit-content;
   transition: color 1000ms ease-in-out;
@@ -646,10 +646,17 @@ body.dark-mode .project-visible {
   padding-bottom: 5px;
 }
 
+
+.logoJugendfilmtage img {
+  width: 30%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .media video {
   width: 100%;
   padding-bottom: 5px;
-
 }
 
 .project-tabel {
@@ -927,7 +934,6 @@ body.dark-mode .project-visible {
   .media video {
     width: 100%;
     padding-bottom: 5px;
-
   }
 
   .info-tabel {
