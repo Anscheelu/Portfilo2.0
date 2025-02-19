@@ -240,7 +240,7 @@ h3 {
 }
 
 .text h3 {
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 
 a {
@@ -990,6 +990,10 @@ body.dark-mode .project-visible {
     width: 100%;
     padding-top: 5px;
     padding-bottom: 20px;
+  }
+
+  .text h3 {
+    line-height: 1.5em;
   }
 
 }
