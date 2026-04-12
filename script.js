@@ -168,7 +168,7 @@ function scrollToImage(idx, instant) {
     track.style.transition = instant ? 'none' : 'transform 0.55s cubic-bezier(0.25, 0.1, 0.25, 1)';
     track.style.transform = `translateY(${ty}px)`;
     items.forEach((it, i) => {
-        it.style.filter = i === idx ? 'none' : 'blur(4px)';
+        it.style.filter = i === idx ? 'none' : 'blur(4px) brightness(0.15)';
     });
     updateSidebarPosition(idx);
 }
