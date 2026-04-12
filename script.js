@@ -475,11 +475,13 @@ window.addEventListener('touchstart', (e) => {
 
 window.addEventListener('touchmove', (e) => {
     if (timelineDragging) return;
+    const inScrollable = e.target.closest('#detail-desc, #info-box');
     if (detailActive) {
-        // allow default (don't preventDefault) so video controls still work
+        if (!inScrollable) e.preventDefault();
         return;
     }
     if (!gridMode) {
+        if (inScrollable) return;
         e.preventDefault();
         const currentY = e.touches[0].clientY;
         const dy = touchHomepageLastY - currentY;
@@ -492,6 +494,7 @@ window.addEventListener('touchmove', (e) => {
 
 window.addEventListener('touchend', (e) => {
     if (detailActive) {
+        if (e.target.closest('#detail-desc, #info-box')) return;
         const dy = touchHomepageLastY - (e.changedTouches[0]?.clientY ?? touchHomepageLastY);
         if (Math.abs(dy) > 40) {
             const dir = dy > 0 ? 1 : -1;
@@ -530,6 +533,38 @@ function closeDetail() {
 projects.forEach((p, i) => p.onclick = () => !detailActive && !homeDragMoved && openDetail(i));
 document.getElementById('detail-close').onclick = closeDetail;
 detailOverlay.onclick = (e) => { if (e.target === detailOverlay) closeDetail(); };
+
+detailOverlay.addEventListener('click', (e) => {
+    if (detailDragMoved) return;
+    if (window.innerWidth >= 800) return;
+    const isImg = e.target.tagName === 'IMG';
+    const isVid = e.target.tagName === 'VIDEO';
+    if (!isImg && !isVid) return;
+    const item = e.target.closest('.detail-img-item');
+    if (!item) return;
+    const track = document.querySelector('.detail-img-track');
+    const items = track ? track.querySelectorAll('.detail-img-item') : [];
+    if (items[currentImg] !== item) return;
+
+    if (isVid) {
+        const vid = e.target;
+        if (vid.requestFullscreen) vid.requestFullscreen();
+        else if (vid.webkitEnterFullscreen) vid.webkitEnterFullscreen();
+        return;
+    }
+
+    const fs = document.createElement('div');
+    fs.id = 'fullscreen-media-overlay';
+    const img = document.createElement('img');
+    img.src = e.target.src;
+    fs.appendChild(img);
+    document.body.appendChild(fs);
+    requestAnimationFrame(() => fs.classList.add('visible'));
+    fs.addEventListener('click', () => {
+        fs.classList.remove('visible');
+        setTimeout(() => fs.remove(), 250);
+    });
+});
 
 document.getElementById('home').onclick = () => {
     if (detailActive) closeDetail();
