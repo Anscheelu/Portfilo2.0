@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l \"/Users/angela/Desktop/Uni/</Vectra/script.js\")",
+      "Bash(ls -la \"/Users/angela/Desktop/Uni/</Vectra/\")"
+    ]
+  }
+}
