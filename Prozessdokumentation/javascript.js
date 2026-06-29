@@ -166,6 +166,7 @@ if (breadcrumbBtn && dropdown) {
 
     function resetDropdown() {
         dropdown.classList.remove('is-open', 'is-open--hover', 'is-open--click');
+        dropdown.querySelectorAll('li').forEach(li => { li.style.animation = ''; });
         hoverScrambles.forEach(s => s.restore());
         hoverScrambles = [];
     }
@@ -181,6 +182,13 @@ if (breadcrumbBtn && dropdown) {
             dropdown.querySelectorAll('a').forEach(link => {
                 const ctrl = attachScramble(link);
                 if (ctrl) { ctrl.scramble(); hoverScrambles.push(ctrl); }
+            });
+        } else if (mode === 'click') {
+            dropdown.querySelectorAll('li').forEach(li => {
+                const isCurrent = !!li.querySelector('a[aria-current="page"]');
+                li.style.animation = isCurrent
+                    ? 'dropdown-title-in 0.22s ease forwards'
+                    : 'dropdown-items-in 0.2s ease 0.22s forwards';
             });
         }
     }
@@ -1136,7 +1144,10 @@ if (document.body.classList.contains('page--index')) {
             overlay.style.transition = 'transform 0.65s cubic-bezier(0.4, 0, 0.2, 1)';
             overlay.style.transform  = `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px)) scale(${scale})`;
 
-            overlay.addEventListener('transitionend', () => {
+            let introDone = false;
+            function onIntroDone() {
+                if (introDone) return;
+                introDone = true;
                 overlay.remove();
                 target.style.transition = 'opacity 0.3s';
                 target.style.opacity    = '1';
@@ -1154,7 +1165,10 @@ if (document.body.classList.contains('page--index')) {
                 });
 
                 setTimeout(enableEntryTooltips, waveItems.length * 80 + 350);
-            }, { once: true });
+            }
+
+            overlay.addEventListener('transitionend', onIntroDone, { once: true });
+            setTimeout(onIntroDone, 750);
         }, 1200);
     } else {
         enableEntryTooltips();

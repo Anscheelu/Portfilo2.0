@@ -324,7 +324,6 @@ display: flex;
 .page-content {
     height: calc(100vh - var(--header-h, 0px) - var(--footer-h, 0px) - 72px);
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
 
     padding: 0 48px 0;
 
@@ -363,7 +362,6 @@ display: flex;
     top: 0;
     max-height: calc(100vh - var(--header-h, 0px));
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
 }
 
