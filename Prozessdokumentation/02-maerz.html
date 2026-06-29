@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 März | Prozessdokumentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page--yellow">
+    <header class="site-header">
+        <div class="site-header__toggle-space"></div>
+        <div class="site-header__nav">
+            <a href="index.html" class="header__back">zurück</a>
+        </div>
+        <div class="site-header__content">
+            <button class="header__breadcrumb">März: Kulturgeschichtliche Thesis</button>
+                        <ul class="header__dropdown">
+                <li><a href="01-februar.html">Februar: Themenfindung</a></li>
+                <li><a href="02-maerz.html" aria-current="page">März: Kulturgeschichtliche Thesis</a></li>
+                <li><a href="03-april.html">April: Visuelle Grundlagen</a></li>
+                <li><a href="04-mai.html">Mai: Thema und Exploration</a></li>
+                <li><a href="07-juni.html">Juni: Umsetzung</a></li>
+            </ul>
+        </div>
+        <div class="site-header__aside"></div>
+        <div class="site-header__toggle-space"></div>
+    </header>
+<main class="page-content">
+        <div class="layout">
+
+            <aside class="sidebar sidebar--left" id="nav">
+                <div class="sidebar__inner">
+                    <button class="sidebar__arrow" data-label="Inhaltsverzeichnis">← Inhaltsverzeichnis</button>
+                
+                    <ul class="sidebar__nav">
+                        <li><a href="#1">1 Einleitung</a></li>
+                        <li><a href="#2">2 Geschichte der Reduktion</a>
+                            <ul>
+                                <li><a href="#2-1">2.1 Ornamentale Kartografie</a></li>
+                                <li><a href="#2-2">2.2 Geometrische Sprache der Mathematik</a></li>
+                                <li><a href="#2-3">2.3 Reduktion als Gestaltungsnorm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#3">3 Kognitive Verankerung</a>
+                            <ul>
+                                <li><a href="#3-1">3.1 Präattentive Verarbeitung</a></li>
+                                <li><a href="#3-2">3.2 Sensorische versus willkürliche Symbole</a></li>
+                                <li><a href="#3-3">3.3 Gestaltgesetze</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#4">4 Drei Dimensionen der Reduktion</a>
+                            <ul>
+                                <li><a href="#4-1">4.1 Quantitative Reduktion</a></li>
+                                <li><a href="#4-2">4.2 Formale Reduktion</a></li>
+                                <li><a href="#4-3">4.3 Kontextuelle Reduktion</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#5">5 Kriterien</a>
+                            <ul>
+                                <li><a href="#5-1">5.1 Datenselektion offenlegen</a></li>
+                                <li><a href="#5-2">5.2 Reflexion der Darstellung</a></li>
+                                <li><a href="#5-3">5.3 Sichtbarmachung von Kontext</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#6">6 Zusammenfassung</a></li>
+                        <li><a href="#7">7 Fazit & Ausblick</a></li>
+                        <li><a href="#8">8 Anhang</a>
+                            <ul>
+                                <li><a href="#8-1">8.1 Bibliografie</a></li>
+                                <li><a href="#8-2">8.2 Webseiten</a></li>
+                                <li><a href="#8-3">8.3 Abbildungsverzeichnis</a></li>
+                                <li><a href="#8-4">8.4 Hilfsmittelverzeichnis</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            
+
+            
+
+            
+            <script id="image-captions" type="application/json">
+            {
+                "01": "Georgia Department Of Public Health, *Top 5 Countries with the Greatest Number of Confirmed COVID-19 Cases* [verfälschte Version, x-Achse nicht chronologisch], 2020.",
+                "02": "Georgia Department Of Public Health, *Top 5 Countries with the Greatest Number of Confirmed COVID-19 Cases* [Detail: Datum], 2020.",
+                "03": "Georgia Department Of Public Health, *Top 5 Countries with the Greatest Number of Confirmed COVID-19 Cases* [korrigierte Version, x-Achse chronologisch], 2020.",
+                "04": "Abraham Ortelius, *Theatrum Orbis Terrarum*, 1571, niederländische Ausgabe, Kupferstich koloriert, Koninklijke Bibliotheek, Den Haag.",
+                "05": "Abraham Ortelius, *Theatrum Orbis Terrarum* [Detail: Illustration], 1571, niederländische Ausgabe, Kupferstich koloriert, Koninklijke Bibliotheek, Den Haag.",
+                "06": "William Playfair, *Charts of all the imports and exports to and from England from the Year 1700 to 1782*, 1786, kolorierter Kupferstich.",
+                "07": "Florence Nightingale, *Diagram of the causes of mortality in the army in the East*, 1858, Farblithografie.",
+                "08": "Edward Tufte, *Data-Ink and Graphical Redesign* [Neugestaltung einer bestehenden Statistik], 1983.",
+                "09": "Riccardo Mazza, *Example showing how the hue and intensity of colors are processed preattentively*, 2009.",
+                "10": "Alberto Cairo, *On which of these maps is it easier to identify the number of factories of each kind?*, 2023.",
+                "11": "Sheila Pontis, Michael Babwahsingh, *Preattentive Attributes*, 2024.",
+                "12": "Bundesamt für Statistik (BFS), *Aufteilung der in der Schweiz immatrikulierten Luftfahrzeuge*, 2024.",
+                "13": "Riccardo Mazza, *Gestalt proximity example*, 2009.",
+                "14": "Riccardo Mazza, *Gestalt similarity example*, 2009.",
+                "15": "Riccardo Mazza, *Gestalt closure example*, 2009.",
+                "16": "Bundesamt für Statistik (BFS), *Die zehn beliebtesten Flugdestinationen nach Quartal – mit Vorjahresvergleich*, 2026.",
+                "17": "Bundesamt für Statistik (BFS), *Hauptsprachen, 1970–2024*, 2024.",
+                "18": "Ed Hawkins, *Warming Stripes*, 2018.",
+                "19": "Angela Ammann, *Warming Stripes* [farblich verändert], 2026.",
+                "20": "Florida Department of Law Enforcement, *Gun Deaths in Florida*, 2014.",
+                "21": "Angela Ammann, *Gun Deaths in Florida* [gespiegelt und rotiert], 2026.",
+                "22": "Our World in Data, *Global warming: annual temperature anomaly*, 2026.",
+                "23": "Our World in Data, *Global warming: annual temperature anomaly* [Learn more about this data], 2026."
+            }
+            </script>
+
+            <article class="content" data-asset-path="assets/Maerz/kulturgeschichtlicheThesis">
+
+                <div class="contenttitle">Was Daten verschweigen </br> Reduktion und Verantwortung im Informationsdesign</div>
+
+                <div class="section"></div>
+
+                <h1 id="1">1 Einleitung</h1>
+                <p>Die fortschreitende Digitalität stellt Designer:innen vor
+                    neue Herausforderungen. In einer vernetzten Welt ist nicht mehr
+                    unmittelbar nachvollziehbar, woher Daten stammen und in welchem
+                    Kontext sie erhoben und verarbeitet wurden. Durch die
+                    stetig wachsenden Datenmengen entsteht ein Informationsüberfluss.
+                    Zahlen und Diagramme werden dabei oftmals als präzise
+                    Abbildungen der Realität wahrgenommen. Ihre visuelle Klarheit
+                    erzeugt Vertrauen. Diese Wahrnehmung steht jedoch im Widerspruch
+                    zur Realität. Datenerhebung und -visualisierung sind grundsätzlich
+                    menschliche und selektive Prozesse <span class="cite" data-src="src-dignazio-2020">(D’Ignazio & Klein,
+                    2020, S. 39)</span>. Da Daten niemals unabhängig von Menschen und
+                    deren Technologien erfasst werden, müssen sowohl diese unkritische
+                    Datenwahrnehmung als auch die Prozesse der Auswahl und
+                    Gestaltung kritisch hinterfragt werden.</br></br>
+                    Ein Beispiel aus dem Jahr 2020 verdeutlicht dies. Während
+                    der COVID-19-Pandemie veröffentlichte das Gesundheitsministerium
+                    des US-Bundesstaats Georgia ein Balkendiagramm zur Entwicklung
+                    der Fallzahlen (Abb. 01). Die Grafik wurde professionell
+                    gestaltet, staatlich autorisiert und visuell auf das Wesentliche reduziert.
+                    Sie suggerierte einen kontinuierlichen Rückgang der Infektionsfälle.
+                    Bei genauerer Betrachtung fällt jedoch auf, dass die
+                    x-Achse nicht chronologisch angeordnet ist, sondern gezielt so,
+                    dass die Fallzahlen zu sinken scheinen. Auf den 7. Mai folgt der
+                    26. April (Abb. 02). Die formale Klarheit und die saubere Darstellungsweise
+                    tragen dazu bei, die irreführende Visualisierung
+                    zu verschleiern. In der korrekt angeordneten Version ist kein
+                    entsprechender Rückgang erkennbar (Abb. 03). Eine fehlerhafte
+                    Reduktion kann nicht nur täuschen, sondern, wie in diesem
+                    Beispiel, im schlimmsten Fall über Leben und Tod entscheiden.
+                    Reduktion ist demnach nicht nur eine Vereinfachung, sondern ein
+                    Instrument zur gezielten Steuerung der Wahrnehmung.</br></br>
+                    Für die visuelle Kommunikation stellt dies eine zentrale
+                    Herausforderung dar. Datenvisualisierer:innen machen komplexe
+                    Informationen zugänglich, prägen jedoch gleichzeitig, wie diese verstanden
+                    werden. Designer:innen legen fest, welche Daten sichtbar
+                    werden, welche Perspektiven priorisiert und welche ausgeschlossen
+                    werden. Diese Entscheidungen bleiben in reduzierten Darstellungen
+                    meist unsichtbar und erzeugen so den Eindruck von Objektivität.</br></br>
+                    Diese Arbeit geht von der These aus, dass Reduktion im
+                    Informationsdesign unvermeidbar ist. Sie ist kein rein gestalterisches
+                    Mittel, sondern der zentrale Mechanismus, durch den Informationen
+                    strukturiert und Bedeutung erzeugt werden. Gerade weil
+                    Reduktion notwendig ist, kann sie nicht neutral sein. Sie bestimmt,
+                    welche Aspekte sichtbar werden und welche unsichtbar bleiben.</br></br>
+                    Daraus ergibt sich die Forschungsfrage: Wie wirkt Reduktion
+                    im Informationsdesign, differenziert nach ihrer quantitativen,
+                    formalen und kontextuellen Dimension, auf die Wahrnehmung
+                    von Daten und welche Konsequenzen ergeben sich daraus für
+                    einen verantwortungsvollen Umgang? Ziel der Arbeit ist die Entwicklung
+                    eines reflektierten gestalterischen Ansatzes. Der Fokus
+                    liegt auf Statistiken und Datenvisualisierungen, die im Kontext
+                    von Massenmedien oder öffentlicher Kommunikation entstanden
+                    sind. Die herangezogenen Beispiele stammen mehrheitlich aus dem
+                    englischsprachigen Raum, was dem aktuellen Stand der verfügbaren
+                    Fachliteratur geschuldet ist und die Gültigkeit der analysierten
+                    Mechanismen nicht einschränkt. Begriffe wie Informationsgrafik
+                    und Datenvisualisierung werden im Rahmen dieser Arbeit
+                    als Synonyme behandelt und nicht weiter differenziert.</br></br>
+                    Zur Beantwortung der Fragestellung wird zunächst untersucht,
+                    wie sich die Gleichsetzung von Reduktion und Objektivität
+                    historisch entwickelt hat. Anschliessend wird gezeigt, warum reduzierte
+                    Darstellungen kognitiv als besonders glaubwürdig wahrgenommen
+                    werden. Darauf aufbauend werden drei Dimensionen der
+                    Reduktion im Informationsdesign unterschieden: die quantitative,
+                    die formale und die kontextuelle. Abschliessend werden Kriterien
+                    formuliert, die eine transparente und verantwortungsvolle Gestaltung
+                    von Daten ermöglichen.</p>
+
+                <div class="section"></div>
+                <h1 id="2">2 Geschichte der Reduktion</h1>
+                <p>Die Gleichsetzung von Reduktion und Objektivität ist kein
+                    natürlicher Reflex und auch kein universelles Gestaltungsprinzip.
+                    Sie ist das Ergebnis einer historischen Entwicklung, die sich über
+                    mehrere Jahrhunderte erstreckt hat und deren Ursprünge bis in
+                    das 18. Jahrhundert zurückreichen. Um zu verstehen, wie es dazu
+                    kam, dass eine reduzierte Gestaltung heute als objektive Wahrheit
+                    gilt, lohnt es sich, einen Blick auf die geschichtliche Entwicklung
+                    zu werfen.</p>
+                <h1 id="2-1">2.1 Ornamentale Kartografie</h1>
+                <p>Die Vorstellung, dass Daten ein reduziertes Design verlangen,
+                    war nicht immer eine Selbstverständlichkeit. Einer der ersten
+                    modernen Atlanten, «Theatrum Orbis Terrarum» vom flämischen
+                    Kartografen Abraham Ortelius, erschien 1570. Die Karte stützte
+                    sich auf eine Sammlung von Arbeiten und wurde durch verschiedene
+                    Schattierungen, Farben und Illustrationen ergänzt <span class="cite" data-src="src-rendgen">(Abb. 04; Rendgen et al., 2019, S. 148)</span>. Die Detailansicht zeigt ein aufwendig
+                    illustriertes Schiff als aktives Kartenelement (Abb. 05).</br></br>
+                    Ornament und Glaubwürdigkeit schlossen sich für Ortelius
+                    nicht aus. Letztere hing vielmehr vom Ruf des Gestalters, der
+                    Qualität und der Quellen ab. Zu dieser Zeit existierte die enge
+                    Verbundenheit von Reduktion und Objektivität noch nicht. Die
+                    wissenschaftliche Kartografie und das Informationsdesign waren
+                    zwar bereits verknüpft, jedoch ohne den späteren Anspruch an
+                    visuelle Reduktion als Zeichen von Glaubwürdigkeit und Wahrheit
+                    <span class="cite" data-src="src-rendgen">(Rendgen et al., 2019, S. 123)</span>.</p>
+                <h1 id="2-2">2.2 Geometrische Sprache der Mathematik</h1>
+                <p>Im späten 18. Jahrhundert wurde die Informationsgrafik
+                    immer wieder durch die Fortschritte in der Wissenschaft geprägt.
+                    Es entstand das Bestreben, Sachverhalte zu visualisieren, die über
+                    die rein geografische Kartografie hinausgingen. Hierzu gehörten
+                    Statistiken über Sterblichkeitsraten, Wachstum und andere vielschichtige
+                    Zusammenhänge. Um diese abstrakten Phänomene darzustellen,
+                    stützte man sich auf die visuelle Sprache der Statistik
+                    <span class="cite" data-src="src-tufte-2018">(Tufte, 2018, S. 43)</span>.</br></br>
+                    Ein Beispiel hierfür ist die Erfindung des Balken- und Liniendiagramms
+                    durch den Ökonomen William Playfair (1786). Er
+                    ordnete erstmals Daten an einem abstrakten Raster an <span class="cite" data-src="src-tufte-2018">(Abb. 06; Tufte, 2018, S. 32-33)</span>. Dies war keine rein ästhetische Entscheidung,
+                    sondern eine rhetorische Strategie. Die geometrische Sprache
+                    der Mathematik verlieh den Daten eine Autorität, die andere
+                    illustrative Darstellungen nicht aufwiesen.</br></br>
+                    Durch den Anstieg der Anzahl von Publikationen und
+                    des Wissenstandes erreichte das Informationsdesign eine weitere
+                    wichtige politische Ebene <span class="cite" data-src="src-rendgen">(Rendgen et al., 2019, S. 123)</span>. In diesem
+                    Kontext versuchten viele Wissenschaftler:innen, die Gesellschaft
+                    und deren Gesetze durch ihre statistischen Methoden zu untersuchen
+                    und zu visualisieren. Florence Nightingale zeigte in ihrem
+                    Diagramm «Diagram of the causes of mortality in the army in the
+                    East» (1858) die Sterblichkeitsrate so, dass diese auch ohne statistisches
+                    Vorwissen erfassbar war (Abb. 07). Durch diese gezielte
+                    Reduktion auf das Wesentliche konnte sie eine breite Masse
+                    erreichen und informieren. Reduktion war hier kein Ausdruck von
+                    Neutralität, sondern ein Instrument der Überzeugung.</br></br>
+                    Was Playfair und Nightingale zeigen, ist nicht die Entdeckung
+                    von Objektivität, sondern deren Einfluss auf die visuelle
+                    Vermittlung. Die mathematische Ästhetik wirkte objektiver, da sie
+                    aussah wie pure Wissenschaft. Aufgrund ihrer Überzeugungskraft
+                    wurde dieses formale Mittel zum Vorbild.</p>
+                <h1 id="2-3">2.3 Reduktion als Gestaltungsnorm</h1>
+                <p>Was sich im 19. Jahrhundert als rhetorische Strategie
+                    entwickelte, wurde im 20. Jahrhundert zur Norm erklärt. Edward
+                    Tufte formulierte 1983 das Prinzip der «Data-Ink-Ratio»
+                    (Daten-Tinte-Verhältnis). Es soll nur so viel Tinte in einer Grafik
+                    verwendet werden, wie Daten vorhanden sind. Auf Raster,
+                    Dekorationen und wiederholende Elemente soll verzichtet werden,
+                    da diese die Bedeutung einer Statistik verfälschen könnten
+                    <span class="cite" data-src="src-tufte-2018">(Tufte, 2018, S. 53-59)</span>. In einer dreiteiligen Sequenz zeigt
+                    Tufte, wie eine Statistik radikal dekonstruiert wird (Abb. 08).
+                    Dabei befreit er die Ausgangsgrafik schrittweise von nicht-datenbezogener
+                    Tinte, bis rechts eine Darstellung mit maximaler Informationseffizienz
+                    resultiert. Tuftes Zitat: «Graphical excellence
+                    begins with telling the truth about the data.» <span class="cite" data-src="src-tufte-2018">(Tufte, 2018, S. 53)</span>,
+                    vermittelt eine neue Art der Gestaltungsmoral. Tufte erhob
+                    Reduktion zur Norm und machte sie zur Frage der Integrität.
+                    Die Gleichsetzung von Reduktion, Wahrheit und Objektivität, die
+                    Playfair und Nightingale als überzeugendes Mittel eingeführt hatten,
+                    wurde nun als Designprinzip übernommen.</br></br>
+                    Diese Entwicklung wirkt bis heute nach. Wie D’Ignazio und
+                    Klein zeigen, hat sich eine Ästhetik etabliert, die sich als objektiv
+                    und fehlerfrei lesen lässt. Minimalistisches und sauberes Design
+                    signalisiert wissenschaftliche Autorität. Dadurch werden subjektive
+                    Designentscheidungen hinter jedem Datensatz verschleiert
+                    <span class="cite" data-src="src-dignazio-2020">(D’Ignazio & Klein, 2020, S. 77)</span>. Mit der Digitalisierung vervielfachen
+                    sich die Möglichkeiten der Datenvisualisierung grundlegend.</br></br>
+                    Dass ein reduziertes Diagramm heute als objektive Wahrheit
+                    empfunden wird, ist kein Instinkt. Es ist eine kulturell entwickelte
+                    Ansicht der westlichen Welt und reicht mit seinem Ursprung
+                    bis in das 18. Jahrhundert zurück, in dem die Wissenschaft immer
+                    mehr an Bedeutung und Einfluss gewann. Reduktion ist nicht das
+                    Problem, sondern die Illusion, die sie erzeugt. Deren Ursprung
+                    ist nicht nur historisch verwurzelt, sondern zudem tief in unserer
+                    biologischen Wahrnehmung verankert.</p>
+
+                <div class="section"></div>
+                <h1 id="3">3 Kognitive Verankerung</h1>
+                <p>Das folgende Kapitel zeigt, welche kognitiven Mechanismen
+                    dazu beitragen, dass reduzierte Grafiken automatisch als klar
+                    gelesen werden. Dabei werden drei Mechanismen untersucht. Erstens,
+                    wie das Gehirn visuelle Reize automatisch verarbeitet, zweitens,
+                    warum manche Zeichen intuitiv als vertrauenswürdiger gelten
+                    als andere und drittens, wie das Gehirn aus den Elementen
+                    aktiv Bedeutung konstruiert.</p>
+                <h1 id="3-1">3.1 Präattentive Verarbeitung</h1>
+                <p>Das menschliche Gehirn kann nicht nur Informationen
+                    speichern, sondern auch wahrnehmen, verarbeiten, schlussfolgern,
+                    kategorisieren und interpretieren. Diese Kapazität ist jedoch
+                    begrenzt. Da das Kurzzeitgedächtnis nur eine begrenzte Anzahl
+                    an Informationen gleichzeitig verarbeiten kann, ist Reduktion
+                    eine Voraussetzung dafür, dass Informationen schnell erfasst
+                    werden können <span class="cite" data-src="src-mazza">(Mazza, 2009, S. 34)</span>. Genau diese Begrenztheit
+                    macht Reduktion im Informationsdesign nicht nur sinnvoll,
+                    sondern zwingend notwendig.</br></br>
+                    Alles, was unsere Sinne wahrnehmen, wird zunächst im
+                    sensorischen Gedächtnis gespeichert. Dazu gehört die Wahrnehmung
+                    von Farben, Formen, Linien und Kontrasten. Diese Verarbeitung
+                    erfolgt automatisch und unabhängig von bewusster Kontrolle
+                    <span class="cite" data-src="src-mazza">(Mazza, 2009, S. 34)</span>. Sie wird als präattentive Verarbeitung
+                    bezeichnet, da sie ohne fokussierte Aufmerksamkeit, also ohne
+                    bewusste Ausrichtung auf einen spezifischen Reiz, stattfindet.</br></br>
+                    Der sogenannte «Pop-out-Effekt» beschreibt, wie bestimmte
+                    visuelle Elemente direkt wahrgenommen werden, ohne
+                    aktiv danach zu suchen. Elemente heben sich visuell von ihrer
+                    Umgebung ab und «springen ins Auge» <span class="cite" data-src="src-pontis">(Pontis & Babwahsingh, 2024, S. 56)</span>. Dies zeigt sich etwa beim Einsatz von Farbe.
+                    Das Gehirn filtert einen einzelnen Buchstaben in einer Zeichenmatrix
+                    heraus, ohne jedes Element einzeln zu prüfen (Abb. 09).</br></br>
+                    Das Prinzip lässt sich auch an einem Beispiel einer Informationsgrafik
+                    ablesen. Durch den Einsatz von Farben, können
+                    die zwei Gruppen in der kolorierten Version direkt unterschieden
+                    werden (Abb. 10). Dieselbe präattentive Wirkung lässt sich
+                    durch Form, Grösse, Position und Bewegung erzielen (Abb. 11).
+                    All diese Attribute haben gemeinsam, dass sie wahrgenommen
+                    werden, bevor das bewusste Denken eingreift. Wichtige Informationen
+                    können gezielt sichtbar gemacht werden, während andere in
+                    den Hintergrund treten.</br></br>
+                    Gleichzeitig entsteht daraus eine zentrale Problematik.
+                    Was schnell erfassbar ist, erscheint automatisch klar. Diese Klarheit
+                    wird tendenziell mit Wahrheit gleichgesetzt, obwohl sie
+                    lediglich das Ergebnis kognitiver Leichtigkeit ist. Diese Wirkung
+                    hängt nicht nur davon ab, wie schnell etwas wahrgenommen wird,
+                    sondern auch davon, welche Art von Symbolen verwendet werden.</p>
+                <h1 id="3-2">3.2 Sensorische versus willkürliche Symbole</h1>
+                <p>Colin Ware <span class="cite" data-src="src-ware">(2013, Kap. 1)</span><sup class="footnote-ref" data-footnote="footnote-01">01</sup> unterscheidet zwischen sensorischen
+                    und willkürlichen Symbolen. Sensorische Symbole sind kulturübergreifend
+                    verständlich, da sie keine Lernprozesse voraussetzen.
+                    Ein Kreis repräsentiert einen begrenzten Bereich, unabhängig
+                    von Bildung, Kultur und Vorwissen. Willkürliche Symbole hingegen
+                    müssen zuerst erlernt werden und sind kulturabhängig.
+                    Eine Grafik, die auf sensorischer Wahrnehmung basiert, wirkt verständlicher
+                    und wird schneller erfasst.</p>
+                <p class="footnote" id="footnote-01"><sup>01</sup> Der zitierte Abschnitt befindet sich in Kap. 1, <em>Foundations for an Applied Science of Data Visualization, Sensory versus Arbitrary Symbols</em> (keine Seitenangabe möglich)</p>
+                <p>Dies lässt sich anhand eines Beispiels veranschaulichen.
+                    In der Statistik «Aufteilung der in der Schweiz immatrikulierten
+                    Luftfahrzeuge» des Bundesamts für Statistik (2024)
+                    werden Kategorien als Rechtecke dargestellt, deren Flächen direkt
+                    mit den jeweiligen Datenwerten korrespondieren. Eine grössere
+                    Fläche bedeutet dabei eine grössere Menge, ein sensorisches
+                    Prinzip, das auch ohne Legende verstanden wird. Ein Beispiel
+                    willkürlicher Symbolik findet sich in derselben Grafik. Die
+                    Abkürzung MTOM (maximale Startmasse eines Luftfahrzeugs)
+                    erschliesst sich nur mit Vorwissen. Ohne die Fussnote bleibt diese
+                    Abkürzung unverständlich (Abb. 12).</br></br>
+                    Für das Design bedeutet dies, dass die Wahl von Symbolen
+                    direkten Einfluss darauf hat, wie eine Visualisierung gelesen
+                    wird. Intuitiv verständliche Darstellungen wirken überzeugender,
+                    auch wenn sie nicht unbedingt vollständiger oder genauer sind.
+                    Gleichzeitig sind sensorische Symbole nicht vollständig universell.
+                    Wahrnehmung variiert je nach Kontext, Erfahrung und biologischen
+                    Voraussetzungen. Die Wahl von Symbolen ist daher keine
+                    neutrale Entscheidung, sondern beeinflusst, welche Bedeutung
+                    einer Darstellung zugeschrieben werden kann.</p>
+                <h1 id="3-3">3.3 Gestaltgesetze</h1>
+                <p>Sensorische Symbole erklären, warum bestimmte Zeichen
+                    intuitiv wirken. Die Gestaltgesetze beschreiben, wie das Gehirn
+                    diese Informationen organisiert und interpretiert <span class="cite" data-src="src-mazza">(Mazza, 2009,
+                    S. 41)</span>. Elemente, die nahe beieinander liegen, werden als zusammengehörig
+                    wahrgenommen (Abb. 13). Ähnliche Formen werden
+                    ebenfalls gruppiert (Abb. 14). Unvollständige Formen werden als
+                    vollständig ergänzt (Abb. 15). Weitere Gestaltgesetze umfassen
+                    Prägnanz, Kontinuität, gemeinsames Schicksal, gemeinsame Regionen
+                    und Verbundenheit <span class="cite" data-src="src-mazza">(Mazza, 2009, S. 41-44)</span>.</br></br>
+                    Gestaltgesetze können gezielt in Kombinationen vorkommen
+                    und lassen sich nicht immer eindeutig einem einzelnen Prinzip
+                    zuordnen. Ein Beispiel dafür ist die Grafik «Die zehn beliebtesten
+                    Flugdestinationen nach Quartal – mit Vorjahresvergleich»
+                    (2024) des Bundesamts für Statistik (Abb. 16). Das Gesetz der
+                    Nähe gruppiert die jeweiligen Balkenpaare pro Land. Das Gesetz
+                    der Ähnlichkeit sorgt dafür, dass beide Blautöne als zusammengehörige
+                    Gruppe wahrgenommen werden. In einer weiteren Grafik
+                    des Bundesamts für Statistik zu den «Hauptsprachen» (2024) ist
+                    zwischen 2000 und 2010 eine Datenlücke erkennbar. Durch das
+                    Gesetz der Kontinuität wird die unterbrochene Linie vom Gehirn
+                    automatisch als weiterlaufend wahrgenommen (Abb. 17).</br></br>
+                    Diese Mechanismen ermöglichen eine schnelle Orientierung,
+                    da das Gehirn Informationen automatisch ordnet und
+                    strukturiert. Für das Design bedeutet dies, dass Zusammenhänge
+                    tendenziell nicht explizit dargestellt werden müssen, sondern
+                    durch visuelle Anordnung entstehen. Da das Gehirn aktiv Bedeutungen
+                    konstruiert, wirken reduzierte Grafiken vollständig und
+                    Lücken werden eigenständig durch Mustererkennung geschlossen.
+                    Während dieser Mechanismus kognitive Anstrengung spart,
+                    birgt er das Risiko für Fehlinterpretationen oder dem Sehen nicht
+                    vorhandener Phänomene <span class="cite" data-src="src-pontis">(Pontis & Babwahsingh, 2024, S. 58)</span>.
+                    Gestalterisch eröffnet dies Wege zur radikalen Vereinfachung,
+                    erfordert jedoch eine präzise Steuerung, damit Daten beabsichtigt
+                    wahrgenommen werden.</br></br>
+                    Die beschriebenen Mechanismen haben gemeinsam, dass
+                    sie reduzierte Darstellungen als klar und verständlich erscheinen
+                    lassen. Diese Klarheit entsteht jedoch aus der Funktionsweise
+                    der Wahrnehmung und nicht aus der Objektivität der Daten. Aus
+                    dem Zusammenspiel von visueller Ordnung und psychologischem
+                    Vertrauen ergeben sich drei Dimensionen der Reduktion, welche
+                    diese Arbeit im Folgenden analysiert.</p>
+
+                <div class="section"></div>
+                <h1 id="4">4 Drei Dimensionen der Reduktion</h1>
+                <p>Reduktion ist die Grundbedingung jeder Visualisierung.
+                    Die Frage ist dabei nicht ob, sondern wie und wo reduziert
+                    wird. Die Analyse beschränkt sich auf drei Arten der Reduktion:
+                    die quantitative, die formale und die kontextuelle.</p>
+                <h1 id="4-1">4.1 Quantitative Reduktion</h1>
+                <p>Die Auseinandersetzung mit Daten beginnt für Designer:
+                    innen zwingend mit der Selektion. Was möchte ich visualisieren?
+                    Welche Daten stehen zur Verfügung? Was schliesse ich aus?
+                    Diese Entscheidungen formen die Sicht auf eine Thematik, noch
+                    bevor eine visuelle Komponente entsteht. Quantitative Reduktion
+                    bestimmt somit, welche Daten überhaupt sichtbar werden.</br></br>
+                    In der heutigen Ära von Big Data ist diese Dimension
+                    besonders relevant. Boyd und Crawford <span class="cite" data-src="src-boyd">(2012, S. 663)</span> definieren
+                    Big Data nicht primär über deren Grösse, sondern über die Fähigkeit,
+                    diese riesigen Datensätze zu durchsuchen, zu sammeln und zu
+                    verknüpfen. Grössere Datenansammlungen bedeuten nicht automatisch
+                    mehr Objektivität, sondern mehr Möglichkeiten zur Selektion.
+                    Systematische Fehler und strukturelle Verzerrungen in
+                    Datensätzen bleiben bestehen und werden weitergetragen <span class="cite" data-src="src-boyd">(Boyd &
+                    Crawford, 2012, S. 667)</span>.</br></br>
+                    Ein Beispiel dafür ist die medizinische Geschlechterlücke.
+                    Lange Zeit basierten Studien hauptsächlich auf männlichen Probanden.
+                    Der weibliche Körper galt als irrelevant für die Wissenschaft
+                    und Forschung. Nach heutiger medizinischer Erkenntnis
+                    kann dies fatale Konsequenzen haben. In der Praxis führte dies
+                    dazu, dass Herzinfarktsymptome bei Frauen falsch eingeordnet
+                    wurden <span class="cite" data-src="src-criado">(Criado-Perez, 2020, S. 171-172)</span>. Dieses Beispiel zeigt, dass
+                    die Auswahl von Daten direkte Konsequenzen hat. Durch fehlende
+                    Daten werden Patientinnen falsch diagnostiziert und falsch
+                    behandelt, eine Datenlücke mit folgenschwere Auswirkungen auf
+                    das Leben ganzer Bevölkerungsgruppen. Quantitative Reduktion
+                    beginnt somit nicht erst im Design, sondern bereits bei der Erhebung
+                    und entscheidet, welche Perspektiven sichtbar werden und
+                    welche nicht.</p>
+                <h1 id="4-2">4.2 Formale Reduktion</h1>
+                <p>Die formale Reduktion beschreibt die gestalterische
+                    Umsetzung von Daten. Werden sie kreisförmig, quadratisch
+                    oder als Linien dargestellt? Wie unterscheiden sie sich farblich?
+                    Diese Auswahl beeinflusst nicht die Daten selbst, sondern deren
+                    Interpretation. Sie bestimmen, wie eine Visualisierung gelesen
+                    und welche Bedeutung ihr zugeschrieben wird.</br></br>
+                    Ein Beispiel dafür ist das Werk «Warming Stripes»
+                    (2018) von Ed Hawkins (Abb. 18). Die Grafik zeigt den globalen
+                    Temperaturanstieg von 1850 bis heute durch den gezielten Einsatz
+                    von Blau und Rottönen. Diese Farben sind dabei nicht zufällig
+                    gewählt, Hawkins erschafft ein Gefühl für Wärme und Kälte. Die
+                    Reduktion auf Farbe ermöglicht eine unmittelbare Wahrnehmung
+                    der Entwicklung, ohne dass Zahlen gelesen werden müssen. Dies
+                    wird direkt ersichtlich, wenn die Farben verändert werden (Abb. 19).
+                    Die manipulierte Grafik ist keineswegs gleich zu verstehen und
+                    kann auf die Betrachter:innen anders wirken. Für das Design
+                    bedeutet dies, dass formale Entscheidungen nicht nur ästhetisch,
+                    sondern interpretativ wirksam sind. Wird die Farbwahl verändert,
+                    verändert sich auch die Wirkung und Bedeutung der Grafik.
+                    Die Daten bleiben gleich, ihre Interpretation nicht.</br></br>
+                    Während Hawkins Farbwahl die Daten stützt, kehrt das
+                    folgende Beispiel dieses Prinzip um. Die Grafik «Gun deaths in
+                    Florida» (2014) vom Florida Department of Law Enforcement
+                    thematisiert die Anzahl der Morde durch Schusswaffen in Florida
+                    (Abb. 20). Die y-Achse ist dabei umgekehrt angeordnet, sie beginnt
+                    oben bei null und steigt nach unten. Dadurch wirkt die Kurve
+                    wie tropfendes Blut und suggeriert einen Rückgang der Todesfälle
+                    nach Einführung des «Stand your Ground»-Gesetzes (2005).
+                    Beim korrekten Ausrichten der Achsen zeigt sich das Gegenteil.
+                    Was als Abnahme erschienen ist, ist in der korrigierten Version ein
+                    deutlicher Anstieg (Abb. 21). Die Grafik signalisiert durch ihre Einfachheit,
+                    Wahrheit und Vertrauen, ist jedoch das komplette Gegenteil,
+                    visuell wie faktisch. Formale Reduktion entscheidet, wie Daten verstanden
+                    werden. Sie kann Klarheit erzeugen, aber auch vortäuschen.</p>
+                <h1 id="4-3">4.3 Kontextuelle Reduktion</h1>
+                <p>Die kontextuelle Reduktion ist die dritte Dimension.
+                    Diese beschäftigt sich mit den Informationen zu den Daten
+                    und deren Verarbeitung. Wie wurden die Daten bearbeitet?
+                    Woher stammen sie? Wo befinden sich Lücken? Die Kontextualisierung
+                    ist ein wichtiges Element, welches einer Informationsgrafik
+                    Vertrauen schenken kann. Diese Dimension ist die
+                    unsichtbarste der drei, hat jedoch den grössten Einfluss darauf,
+                    wie Daten eingeordnet werden können. Werden Kontexte weggelassen,
+                    erscheinen Daten vollständiger und objektiver, als sie
+                    tatsächlich sind.</br></br>
+                    Nach D’Ignazio und Klein <span class="cite" data-src="src-dignazio-2020">(2020, S. 152)</span> spiegeln Daten
+                    immer die sozialen, kulturellen und historischen Bedingungen
+                    wider, unter denen sie erhoben wurden. Durch das Weglassen
+                    von Kontext werden diese Bedingungen unsichtbar und somit
+                    auch Perspektiven verfälscht. Kontextuelle Reduktion ist deshalb
+                    nicht nur ein technisches und gestalterisches Problem,
+                    sondern auch eine ethische Entscheidung und verlangt deshalb
+                    einen transparenten Umgang.</br></br>
+                    Transparenz ist dabei nicht immer visuell lösbar. Kennedy
+                    et al. <span class="cite" data-src="src-kennedy">(2025, S. 179)</span> zeigen, dass Journalist:innen auf eine zusätzliche
+                    Textebene zurückgreifen, wie zum Beispiel eine Infobox,
+                    eine Bildunterschrift, einen Link zum verwendeten Datensatz
+                    und eine Erläuterung der Methodik. Dies ist keine Schwäche
+                    des Designs, sondern eine ehrliche Anerkennung dessen Grenzen
+                    in Bezug auf Reduktion. Eine Grafik, die ihre eigenen Unsicherheiten
+                    kommuniziert, ist vertrauenswürdiger als eine, die so tut, als
+                    hätte sie keine.</br></br>
+                    Konkret zeigt dies die Website ourworldindata.org
+                    (Abb. 22). Neben der Visualisierung werden dort Informationen
+                    zu Datensätzen, Methoden und Unsicherheiten bereitgestellt.
+                    Ein Beispiel ist die aktuelle Statistik «Global warming:
+                    annual temperature anomaly» (2026). Ein zusätzliches Fenster
+                    beinhaltet genaue Informationen zur Veröffentlichung, zu den
+                    verwendeten Masseinheiten, zum Datensatz, zum Verarbeitungsprozess
+                    sowie zur Zitierweise (Abb. 23). Kontextuelle Reduktion
+                    bestimmt somit, unter welchen Bedingungen Daten gelesen und
+                    eingeordnet werden.</br></br>
+                    Die drei Dimensionen sind eng miteinander verbunden
+                    und greifen ineinander. Reduktion findet nicht an einem
+                    einzelnen Punkt statt, sondern zieht sich durch den gesamten
+                    Designprozess. Jede dieser Ebenen eröffnet Möglichkeiten zur
+                    Vereinfachung und zur Verzerrung.</p>
+
+                <div class="section"></div>
+                <h1 id="5">5 Kriterien</h1>
+                <p>Die zuvor beschriebenen Dimensionen der Reduktion
+                    zeigen, dass Vereinfachung im Informationsdesign auf unterschiedlichen
+                    Ebenen stattfindet. Reduktion ist dabei nicht vermeidbar,
+                    sondern eine grundlegende Voraussetzung jeder Visualisierung.
+                    Daraus ergibt sich die Frage, wie mit diesen Prozessen
+                    verantwortungsvoll umgegangen werden kann. Die folgenden
+                    Kriterien bauen auf den drei Dimensionen der Reduktion auf und
+                    zielen darauf ab, deren Wirkung bewusst zu reflektieren und sichtbar
+                    zu machen.</p>
+                <h1 id="5-1">5.1 Datenselektion offenlegen</h1>
+                <p>Wie Kapitel 4.1 gezeigt hat, beginnt quantitative Reduktion
+                    bereits vor dem kreativen Prozess. Designschaffende erheben
+                    Daten meist nicht selbst, aber sie entscheiden, welchen Daten sie
+                    Gewichtung schenken und welche Perspektiven sie darstellen.
+                    Ein verantwortungsvoller Umgang erfordert Transparenz über
+                    diese Entscheidungen. Dazu gehört, offenzulegen, welche Daten
+                    verwendet, welche ausgeschlossen und aus welchen Gründen
+                    diese Entscheidungen getroffen wurden.</br></br>
+                    Ein konkretes Werkzeug dafür ist die Datenbiografie
+                    von We All Count. Sie stellen ein Dokument zur Verfügung, das
+                    den Entstehungsprozess von Daten dokumentiert. Darunter sind
+                    verschiedene W-Fragen: Wer hat die Daten erhoben? Wie? Wo?
+                    Warum? Wann? (weallcount.com, 2019). Dieses Dokument kann
+                    einer Visualisierung beigefügt oder verlinkt werden und trägt
+                    direkt zu mehr Transparenz bei.</br></br>
+                    Transparenz bedeutet dabei nicht, alle verfügbaren Daten
+                    darzustellen, sondern die getroffene Selektion sichtbar zu machen.
+                    Für das Design bedeutet dies, dass Quellen, Auswahlkriterien und
+                    mögliche Einschränkungen zugänglich gemacht werden sollten.</p>
+                <h1 id="5-2">5.2 Reflexion der Darstellung</h1>
+                <p>Wie Kapitel 4.2 gezeigt hat, kann dieselbe Methode der
+                    formalen Reduktion, eine ehrliche oder eine täuschende Aussage
+                    erzeugen. Der Unterschied liegt nicht im Ausmass der Reduktion,
+                    sondern darin, ob die Entscheidungen die Aussage der Daten
+                    stützen oder verbiegen. Gestaltungsauswahl über Farbe, Form,
+                    und Anordnung beeinflusst, wie eine Visualisierung gelesen wird.</br></br>
+                    Ein Art Director formuliert dies treffend: «In dem Moment,
+                    in dem ich eine Farbe wähle, füge ich zusätzliche Informationen hinzu.
+                    Arbeitslosenzahlen oder Typhusfälle haben keine Farben – ich
+                    muss eine bestimmen. Genau da beginnt die Interpretation.»
+                    <span class="cite" data-src="src-kennedy">(Kennedy et al., 2025, S. 175)</span>. Dies besagt klar, dass Stilmittel,
+                    niemals nur als Dekoration, sondern immer als interpretativer Eingriff
+                    gelten. Ein bewusster Umgang mit formaler Reduktion erfordert,
+                    diese Entscheidungen nicht nur funktional, sondern auch
+                    kritisch zu hinterfragen. Welche Wirkung erzeugt eine bestimmte
+                    Darstellung? Warum dieser Ausschnitt? Welche Alternativen
+                    wären möglich?</br></br>
+                    Für das Design bedeutet dies, gestalterische Mittel bewusst
+                    einzusetzen und deren interpretative Wirkung zu reflektieren.
+                    Klarheit sollte nicht nur erzeugt, sondern auch hinterfragt
+                    werden. Das Kriterium lautet deshalb: Nicht «keine Interpretation
+                    », sondern «erklärbare Interpretation».</p>
+                <h1 id="5-3">5.3 Sichtbarmachung von Kontext</h1>
+                <p>Wie Kapitel 4.3 gezeigt hat, ist kontextuelle Reduktion
+                    die unsichtbarste und folgenreichste Dimension. Was über die
+                    Daten selbst weggelassen wird, bestimmt, wie sie gelesen und
+                    interpretiert werden. Objektiv kann eine Abbildung nicht sein,
+                    Transparent sein kann sie jedoch.</br></br>
+                    Transparenz bedeutet in diesem Zusammenhang nicht Allwissenheit,
+                    sondern erfordert Ehrlichkeit über den vorhandenen
+                    Wissensstand sowie darüber, auf welche Weise dieses Wissen generiert
+                    wurde. Dies bedeutet konkret: Quellen nennen, Unsicherheiten
+                    markieren, Entstehungsprozess und Methoden offenlegen.
+                    Ein verantwortungsvoller Umgang erfordert daher, relevante Kontexte
+                    zugänglich zu machen.</br></br>
+                    Diese Haltung wird vor allem durch KI-Systeme dringlicher.
+                    D’Ignazio und Klein argumentieren, dass künstliche Intelligenz
+                    es für Endnutzer:innen nahezu unmöglich macht, einen
+                    Output auf seine Quellen zurückzuführen <span class="cite" data-src="src-klein-2024">(Klein & D’Ignazio,
+                    2024, S. 12)</span>. Entscheidungen bei der Datenselektion und Verarbeitung
+                    werden dadurch weiter verschleiert.</br></br>
+                    Die Aufgabe der Designschaffenden, diese automatisierten
+                    Prozesse kritisch zu hinterfragen und sichtbar zu machen,
+                    wird deswegen immer relevanter. Für das Design bedeutet dies,
+                    dass Kontext nicht zwingend im Zentrum der Darstellung stehen
+                    muss, aber verfügbar sein sollte. Ergänzende Informationen
+                    können beispielsweise durch Annotationen, Metadaten oder
+                    begleitenden Texten bereitgestellt werden.</br></br>
+                    Die drei Kriterien sind keine isolierten Regeln, sondern
+                    eine Denkhaltung, die den gesamten Designprozess begleitet.
+                    Wer Datenselektion offenlegt, schafft die Grundlage für kontextuelle
+                    Transparenz. Wer formale Entscheidungen als Interpretation
+                    versteht, kann sie erklärbar machen. Und wer Transparenz
+                    als Ziel setzt, anstatt Objektivität anzustreben, erkennt ehrlich
+                    was Reduktion zwangsläufig tut: vereinfachen, weglassen,
+                    priorisieren. Sie sollen Informationsdesigner:innen unterstützen,
+                    Daten verantwortungsvoll umzusetzen und Kontexte sichtbar zu
+                    machen, anstatt sie zu verschleiern.</br></br>
+                    Verantwortungsvolles Informationsdesign beginnt nicht
+                    mit der richtigen Grafik, sondern mit der richtigen Haltung. Jede
+                    Auswahl über Daten, deren Gestaltung und Kontextualisierung ist
+                    eine ethische Abwägung mit Relevanz.</p>
+
+                <div class="section"></div>
+                <h1 id="6">6 Zusammenfassung</h1>
+                <p>Diese Arbeit hat gezeigt, dass Reduktion im Informationsdesign
+                    auf drei Ebenen wirksam ist: historisch, kognitiv und gestalterisch.
+                    Historisch hat sich die Gleichsetzung von Reduktion und
+                    Objektivität seit dem 18. Jahrhundert entwickelt. Was Nightingale
+                    und Playfair als rhetorisches Mittel einführten, eine geometrische,
+                    mathematische Ästhetik als Signal von Wissenschaftlichkeit,
+                    wurde durch Tufte im 20. Jahrhundert als Gestaltungsnorm erklärt.
+                    Reduktion war vor Tufte eine Stilfrage. Durch ihn wurde sie
+                    zur Frage von Integrität. Die Illusion der Objektivität ist damit
+                    keine natürliche Reaktion auf klares Design, sondern eine kulturell
+                    verankerte Ansicht, deren Entwicklung bis in das 18. Jahrhundert
+                    zurückgeht <a href="#2" class="vgl-link">(vgl. Kap. 2)</a>.</br></br>
+                    Kognitiv sorgt das menschliche Gehirn dafür, dass reduzierte
+                    Grafiken automatisch als klar, übersichtlich und vertrauenswürdig
+                    wahrgenommen werden. Präattentive Verarbeitung,
+                    sensorische Symbole und Gestaltgesetze machen eine schnelle,
+                    kulturübergreifende Kommunikation möglich. Diese erzeugen
+                    aber gleichzeitig eine Autorität in Bezug auf den Wahrheitsgehalt
+                    einer Grafik. Genau weil unser Gehirn Reduktion so effizient
+                    verarbeitet, verwechselt es Klarheit mit Wahrheit <a href="#3" class="vgl-link">(vgl. Kap. 3)</a>.</br></br>
+                    Gestalterisch zeigt sich Reduktion in drei verschiedenen
+                    Dimensionen: der quantitativen, der formalen und der
+                    kontextuellen. Die quantitative Reduktion beginnt bereits vor
+                    dem kreativen Prozess, bei der Auswahl der Daten. Die formale
+                    Reduktion erfolgt durch die gezielte Wahl von Farben, Formen
+                    sowie Achsenverhältnissen und kann je nach Entscheidung
+                    vertrauenswürdig oder täuschend wirken. Die kontextuelle Reduktion
+                    ist die unsichtbarste und folgenreichste Dimension. Durch
+                    das Einbeziehen von Informationen über die Daten selbst, über
+                    Herkunft, Lücken und Verarbeitungsprozesse kann Transparenz
+                    geschaffen werden <a href="#4" class="vgl-link">(vgl. Kap. 4)</a>.</br></br>
+                    Die Forschungsfrage, wie Reduktion im Informationsdesign,
+                    differenziert nach ihren drei Dimensionen, auf die Wahrnehmung
+                    wirkt und welche Konsequenzen sich daraus für einen
+                    verantwortungsvollen Umgang ergeben, beantwortet diese Arbeit
+                    mit drei Haltungen. Erstens muss die Datenselektion offengelegt
+                    werden, zweitens müssen formale Entscheidungen zwingend
+                    als interpretativer Akt verstanden werden und drittens muss
+                    Transparenz als Ziel gesetzt werden, anstatt Objektivität anzustreben.
+                    Diese drei Haltungen schliessen die Reduktion nicht aus,
+                    sondern machen sie bewusst sichtbar <a href="#5" class="vgl-link">(vgl. Kap. 5)</a>.</p>
+
+                <div class="section"></div>
+                <h1 id="7">7 Fazit & Ausblick</h1>
+                <p>Die Recherche hat gezeigt, dass die Fragestellung nicht
+                    mit einer Designregel beantwortet werden kann, sondern dass es
+                    dazu eine Änderung in der Haltung benötigt. Verantwortungsvoller
+                    Umgang mit Reduktion bedeutet nicht, weniger zu reduzieren, sondern
+                    Transparenz in Bezug auf Entscheidungen zu schaffen. Die
+                    drei Kriterien geben Designschaffenden dabei einen konkreten
+                    Orientierungsrahmen. Dieses Wissen verändert die Perspektive
+                    auf die eigene Designpraxis. Reduktion ist keine Schwäche des
+                    Informationsdesigns, sie ist eine Grundbedingung. Die Verantwortung
+                    liegt darin, sie sichtbar zu machen.</br></br>
+                    Diese Arbeit hat nicht nur theoretische Erkenntnisse geliefert,
+                    sondern auch den eigenen gestalterischen Blick verändert.
+                    Besonders aufschlussreich war für mich die Erkenntnis, dass das
+                    Problem nicht in der Reduktion selbst liegt, sondern in der Selbstverständlichkeit,
+                    mit der sie als neutral wahrgenommen wird.
+                    Dies verändert, wie ich auf meine eigene Arbeit blicke. Reduktion
+                    bedeutet nicht zwangsläufig Informationsverlust oder Täuschung.
+                    Sie verlangt jedoch Reflexion und Transparenz im Umgang
+                    mit den Daten.</br></br>
+                    Ob die drei Haltungen in der Praxis tatsächlich zu mehr
+                    Transparenz und Vertrauen führen, wurde nicht empirisch überprüft.
+                    Eine Nutzerstudie, die untersucht, wie Betrachter:innen
+                    auf transparente versus oberflächliche Visualisierungen reagieren,
+                    wäre ein interessanter und wichtiger nächster Schritt.</br></br>
+                    Ein weiteres offenes Feld betrifft den Umgang mit künstlicher
+                    Intelligenz. Arbeitsprozesse, die sich auf künstliche Intelligenz
+                    stützen, werden zukünftig weiter an Bedeutung gewinnen,
+                    sei es durch automatische Datenerhebung, Auswertung grosser
+                    Datenmengen oder KI-gestützte Gestaltung und Interpretation.
+                    Die Illusion der Objektivität wird durch automatisierte Systeme
+                    verstärkt, da sie verschleiern, wie Entscheidungen bei der Datenverarbeitung
+                    zustande kommen. Es wäre lohnend, die Reduktionsmechanismen
+                    verschiedener KI-gestützter Systeme zu analysieren
+                    und zu untersuchen, wie transparent diese mit Daten umgehen.</p>
+
+                <div class="section"></div>
+                <h1 id="8">8 Anhang</h1>
+                <p></p>
+                <h1 id="8-1">8.1 Bibliografie</h1>
+                <p>Boyd, Danah, und Kate Crawford. “CRITICAL QUESTIONS
+                    FOR BIG DATA: Provocations for a Cultural, Technological,
+                    and Scholarly Phenomenon”. Information, Communication &
+                    Society 15, Nr. 5 (2012): 662–79. </br>
+                    https://doi.org/10.1080/1369118X.2012.678878</br>
+                    [27.03.2026]</br></br>
+                    Cairo, Alberto. The Functional Art: An Introduction to Information Graphics and Visualization. New
+                    Riders, 2013.</br></br>
+                    Criado-Perez, Caroline. Invisible Women: Exposing Data Bias in
+                    a World Designed for Men. Vintage, 2020.</br></br>
+                    Daston, Lorraine, und Peter Galison. Objektivität. Erste Auflage. Übersetzt von Christa Krüger.
+                    suhrkamp taschenbuch wissenschaft 2458. Suhrkamp, 2024.</br></br>
+                    D’Ignazio, Catherine, und Lauren F. Klein. Data Feminism. Strong Ideas. The MIT Press, 2020.
+                    Gauguin, Jan. Designing Diagrams: Making Information Accessible
+                    through Design. BIS Publ, 2011.</br></br>
+                    Hil, Darjan, und Nicole Lachenmeier. Visualizing complexity: Handbuch modulares Informationsdesign.
+                    Birkhäuser, 2022.</br>
+                    https://doi.org/10.1515/9783035625073</br>
+                    [27.03.2026]</br></br>
+                    Kennedy, Helen, Wibke Weber, und Martin Engebretsen.
+                    “Data Visualization and Transparency in the News”. In Data
+                    Visualization in Society, 1. Aufl., von Martin Engebretsen und
+                    Helen Kennedy. Routledge, 2025.</br>
+                    https://doi.org/10.5117/9789463722902_CH11</br>
+                    [27.03.2026]</br></br>
+                    Kirk, Andy. Data Visualisation: A Handbook for Data Driven
+                    Design. SAGE, 2016.</br>
+                    Klanten, Robert, Hrsg. Data Flow: Visualising Information
+                    in Graphic Design. 5. print. Gestalten, 2011.</br></br>
+                    Klein, Lauren, und Catherine D’Ignazio. “Data Feminism for AI”.
+                    The 2024 ACM Conference on Fairness Accountability and
+                    Transparency, 3. Juni 2024, 100–112.</br>
+                    https://doi.org/10.1145/3630106.3658543</br>
+                    [27.03.2026]</br></br>Lima, Manuel. Visual Complexity: Mapping Patterns of Information.
+                    Princeton Architectural Press, 2011.</br></br>
+                    Manovich, Lev. “What Is Visualisation?” Visual Studies 26, Nr. 1 (2011): 36–49.</br>
+                    https://doi.org/10.1080/1472586X.2011.548488</br>
+                    [27.03.2026]</br></br>
+                    Mazza, Riccardo, Hrsg. Introduction to Information Visualization. SpringerLink Bücher. Springer
+                    London, 2009.</br>
+                    https://doi.org/10.1007/978-1-84800-219-7</br>
+                    [27.03.2026]</br></br>
+                    Munzner, Tamara. Visualization Analysis & Design. With Éamonn Maguire. AK Peters Visualization
+                    Series. CRC Press, 2015.</br></br>
+                    Pontis, Sheila, und Michael Babwahsingh. Information Design
+                    Unbound: Key Concepts and Skills for Making Sense in a Changing World. Bloomsbury Visual Arts, 2024.
+                    Rendgen, Sandra, Julius Wiedemann, David Rumsey, Michael Friendly, Michael A. Stoll, und Scott
+                    Klein. History of Information Graphics. Taschen, 2019.</br></br>
+                    Tufte, Edward R. The Visual Display of Quantitative Information. Second edition, Tenth printing,
+                    April 2018. Graphics Press, 2018.</br></br>
+                    Tufte, Edward R. Visual Explanations: Images and Quantities,
+                    Evidence and Narrative. Graphics Press, 2005.</br></br>
+                    Turilli, Matteo, und Luciano Floridi. “The Ethics of Information
+                    Transparency”. Ethics and Information Technology 11, Nr. 2
+                    (2009): 105–12.</br>
+                    https://doi.org/10.1007/s10676-009-9187-9</br>
+                    [27.03.2026]</br></br>
+                    Ware, Colin. Information Visualization: Perception for Design.
+                    3d edition. Interactive Technologies. Morgan Kaufmann, 2013.</br></br>
+                    Zhang, Yixuan, Yifan Sun, Lace Padilla, Sumit Barua, Enrico
+                    Bertini, und Andrea G. Parker. “Mapping the Landscape of COVID-19 Crisis Visualizations”.
+                    Proceedings of the 2021 CHI
+                    Conference on Human Factors in Computing Systems, 6. Mai 2021, 1–23.</br>
+                    https://doi.org/10.1145/3411764.3445381</br>
+                    [27.03.2026]</br></br></p>
+                <h1 id="8-2">8.2 Webseiten</h1>
+                <p>SABIN CENTER FOR CLIMATE CHANGE LAW. (o. D.). COVID-19
+                    Data Mispresented by Georgia Health Department. Columbia
+                    Law School.</br>
+                    <a href="https://climate.law.columbia.edu/content/covid-19-data-misrepresented-georgia-health-department">https://climate.law.columbia.edu/content/covid-19-data-misrepresented-
+                    georgia-health-department</a></br>
+                    [27.03.2026]</br></br>
+                    Our World in Data. (o. D.). Global warming: annual temperature
+                    anomaly, Our World in Data.</br>
+                    <a href="https://ourworldindata.org/explorers/climate-change?time=1850..latest&Metric=Temperature+anomaly&Long-run+series=false&country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~OWID_NAM~South+Cascade+Glacier~Wolverine+Glacier~Hawaii~Arctic+Ocean">https://ourworldindata.org/explorers/climate-change?time
+                    =1850..latest&Metric=Temperature+anomaly&Long-run+series
+                    =false&country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+C
+                    reek+Glacier~OWID_NAM~South+Cascade+Glacier~Wolverine
+                    +Glacier~Hawaii~Arctic+Ocean</a></br>
+                    [27.03.2026]</br></br>
+                    We All Count. (2019). An Introduction to the Data Biography.
+                    We All Count.</br>
+                    <a href="https://weallcount.com/2019/01/21/an-introduction-to-the-databiography/">https://weallcount.com/2019/01/21/an-introduction-to-the-databiography/</a></br>
+                    [27.03.2026</br></br></p>
+                <h1 id="8-3">8.3 Abbildungsverzeichnis</h1>
+                <p>Abbildung 01</br>
+                    Georgia Department Of Public Health, Top 5 Countries with
+                    the Greatest Number of Confirmed COVID-19 Cases [verfälschte
+                    Version, x-Achse nicht chronologisch], 2020.</br>
+                    <a href="https://www.reddit.com/r/dataisugly/comments/hu5kjq/the_graph_released_by_the_georgia_department_of/">https://www.reddit.com/r/dataisugly/comments/hu5kjq/the_
+                    graph_released_by_the_georgia_department_of/</a></br>
+                    [27.03.2026]</br></br>
+                    Abbildung 02</br>
+                    Georgia Department Of Public Health, Top 5 Countries with the
+                    Greatest Number of Confirmed COVID-19 Cases [Detail: Datum],
+                    2020.</br>
+                    <a href="https://www.reddit.com/r/dataisugly/comments/hu5kjq/the_graph_released_by_the_georgia_department_of/">https://www.reddit.com/r/dataisugly/comments/hu5kjq/the_
+                    graph_released_by_the_georgia_department_of/</a></br>
+                    [27.03.2026]</br></br>
+                    Abbildung 03</br>
+                    Georgia Department Of Public Health, Top 5 Countries with
+                    the Greatest Number of Confirmed COVID-19 Cases [korrigierte
+                    Version, x-Achse chronologisch], 2020.</br>
+                    <a href="https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445381">https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445381</a></br>
+                    [27.03.2026]</br></br>
+                    Abbildung 04</br>
+                    Ortelius, Abraham, Theatrum Orbis Terrarum, 1571, niederländische
+                    Ausgabe, Kupferstich koloriert, Koninklijke Bibliotheek,
+                    Den Haag.</br>
+                    <a href="https://galerij.kb.nl/kb.html#/en/ortelius/page/137/zoom/1/lat/-63.763065186029074/lng/-124.76074218749999">https://galerij.kb.nl/kb.html#/en/ortelius/page/137/zoom/1/lat/-
+                    63.763065186029074/lng/-124.76074218749999</a></br>
+                    [27.03.2026]</br></br>
+                    Abbildung 05</br>
+                    Ortelius, Abraham, Theatrum Orbis Terrarum [Detail: Illustration],
+                    1571, niederländische Ausgabe, Kupferstich koloriert,
+                    Koninklijke Bibliotheek, Den Haag.</br>
+                    <a href="https://galerij.kb.nl/kb.html#/en/ortelius/page/137/zoom/1/lat/-63.763065186029074/lng/-124.76074218749999">https://galerij.kb.nl/kb.html#/en/ortelius/page/137/zoom/1/lat/-
+                    63.763065186029074/lng/-124.76074218749999</a></br>
+                    [27.03.2026]</br></br>
+                    Abbildung 06</br>
+                    Playfair, William, Charts of all the imports and exports to and from
+                    England from the Year 1700 to 1782, 1786, kolorierter Kupferstich,
+                    in: The Commercial and Political atlas, London, 1786.</br>
+                    Abgedruckt in: Tufte, Edward R. The Visual Display of Quantitative
+                    Information. Second edition, Tenth printing, April 2018.
+                    Graphics Press, 2018, S. 32.</br></br>
+                    Abbildung 07</br>
+                    Nightingale, Florence, Diagram of the causes of mortality in the
+                    army in the East, 1858, Farblithografie, in: Notes on Matters
+                    Affecting the Health, Efficiency, and Hospital Administration
+                    of the British Army. Founded Chiefly on the Experience of the
+                    Late War. Harrison and Sons, 1858. Wellcome Collection, London.</br>
+                    <a href="https://commons.wikimedia.org/wiki/File:Nightingale-mortality.jpg">https://commons.wikimedia.org/wiki/File:Nightingale-mortality.jpg</a></br>
+                    [27.03.2026]</br></br>
+                    Abbildung 08</br>
+                    Tufte, Edward, Data-Ink and Graphical Redesign [Neugestaltung
+                    einer bestehenden Statistik], 1983, Buchdruck.</br>
+                    Abgedruckt in: Tufte, Edward R. The Visual Display of Quantitative
+                    Information. Second edition, Tenth printing, April 2018.
+                    Graphics Press, 2018, S. 102.</br></br>
+                    Abbildung 09</br>
+                    Mazza, Riccardo, Example showing how the hue and intensity of
+                    colors are processed preattentively, resulting in a quick distinction
+                    of elements [Diagramm].</br>
+                    Abgedruckt in: Introduction to Information Visualization. SpringerLink
+                    Bücher. Springer London, 2009, S. 36, Fig. 3.1.</br></br>
+                    Abbildung 10</br>
+                    Cairo, Alberto, On which of these maps is it easier to identify the
+                    number of factories of each kind? [Diagramm].</br>
+                    Abgedruckt in: The Functional Art: An Introduction to Information
+                    Graphics and Visualization. New Riders, 2013, S. 102,
+                    Fig. 6.3</br></br>
+                    Abbildung 11</br>
+                    Pontis, Sheila und Michael Babwahsingh, Preattentive Attributes
+                    [Diagramm].</br>
+                    Abgedruckt in: Information Design Unbound: Key Concepts and
+                    Skills for Making Sense in a Changing World. Bloomsbury Visual
+                    Arts, 2024, S. 57.</br></br>
+                    Abbildung 12</br>
+                    Bundesamt für Statistik (BFS), Aufteilung der in der Schweiz immatrikulierten
+                    Luftfahrzeuge [PNG-Export], 2024.</br>
+                    <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/mobilitaet-verkehr/querschnittsthemen/zivilluftfahrt.assetdetail.36023006.html">https://www.bfs.admin.ch/bfs/de/home/statistiken/mobilitaet
+                    -verkehr/querschnittsthemen/zivilluftfahrt.assetdetail.360
+                    23006.html</a></br>
+                    [27.03.2026]</br></br>
+                    Abbildung 13</br>
+                    Mazza, Riccardo, Gestalt proximity example: Objects are perceived
+                    as separate elements (left) or as groups (center and right)
+                    [Diagramm].</br>
+                    Abgedruckt in: Introduction to Information Visualization. SpringerLink
+                    Bücher. Springer London, 2009, S. 42, Fig. 3.6.</br></br>
+                    Abbildung 14</br>
+                    Mazza, Riccardo, Gestalt similarity example: Objects of the
+                    same size (on left) or different color (on right) are perceived as
+                    belonging to the same group [Diagramm].</br>
+                    Abgedruckt in: Introduction to Information Visualization. SpringerLink
+                    Bücher. Springer London, 2009, S. 42, Fig. 3.7.</br></br>
+                    Abbildung 15</br>
+                    Mazza, Riccardo, Gestalt closure example: We tend to see complete
+                    figures even when part of the information is missing (left
+                    and center images) or when elements are aligned in such a
+                    way that the viewer perceives them as connected (right image)
+                    [Diagramm].</br>
+                    Abgedruckt in: Introduction to Information Visualization. SpringerLink
+                    Bücher. Springer London, 2009, S. 42, Fig. 3.8.</br></br>
+                    Abbildung 16</br>
+                    Bundesamt für Statistik (BFS), Die zehn beliebtesten Flugdestinationen
+                    nach Quartal – mit Vorjahresvergleich [PNG-Export],
+                    2026.</br>
+                    <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/mobilitaetverkehr/querschnittsthemen/zivilluftfahrt/linien-charterverkehr.html">https://www.bfs.admin.ch/bfs/de/home/statistiken/mobilitaetverkehr/
+                    querschnittsthemen/zivilluftfahrt/linien-charterverkehr.
+                    html</a></br>
+                    [27.03.2026]</br></br>
+                    Abbildung 17</br>
+                    Bundesamt für Statistik (BFS), Hauptsprachen [PNG-Export],
+                    1970–2024, 2024.</br>
+                    <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/bevoelkerung/sprachen-religionen/sprachen.html">https://www.bfs.admin.ch/bfs/de/home/statistiken/bevoelkerung/
+                    sprachen-religionen/sprachen.html</a></br>
+                    [27.03.2026]</br></br>
+                    Abbildung 18</br>
+                    Hawkins, Ed, Warming Stripes [digitale Grafik], 2018, CC
+                    BY 4.0. Daten: Berkeley Earth, NOAA, UK Met Office.</br>
+                    <a href="https://showyourstripes.info/">https://showyourstripes.info/</a></br>
+                    [27.03.2026]</br></br>
+                    Abbildung 19</br>
+                    Ammann, Angela, Warming Stripes [farblich verändert], 2026,
+                    digitale Grafik,
+                    Basierend auf: Ed Hawkins, Warming Stripes, 2018, digitale
+                    Grafik, CC BY 4.0. Daten: Berkeley Earth, NOAA, UK Met Office.</br>
+                    <a href="https://showyourstripes.info/">https://showyourstripes.info/</a></br>
+                    [27.03.2026]</br></br>
+                    Abbildung 20</br>
+                    Florida Departement of Law Enforcement, Gun Deaths in Florida
+                    [digitale Grafik], 2014.</br>
+                    veröffentlicht in: Reuters, 2014.</br>
+                    <a href="https://www.livescience.com/45083-misleading-gun-death-chart.html">https://www.livescience.com/45083-misleading-gun-death-chart.html</a></br>
+                    [27.03.2026]</br></br>
+                    Abbildung 21</br>
+                    Ammann, Angela, Gun Deaths in Florida [gespiegelt und rotiert,
+                    digitale Grafik], 2026, Basierend auf: Florida Departement
+                    of Law Enforcement, Gun Deaths in Florida, 2014, digitale
+                    Grafik, veröffentlicht in: Reuters, 2014.</br>
+                    <a href="https://www.livescience.com/45083-misleading-gun-death-chart.html">https://www.livescience.com/45083-misleading-gun-death-chart.
+                    html</a></br>
+                    [27.03.2026]</br></br>
+                    Abbildung 22</br>
+                    Our World in Data, Global warming: annual temperature
+                    anomaly [Screenshot, Datenvisualisierung], 2026.</br>
+                    <a href="https://ourworldindata.org/explorers/climate-change?time=1850..latest&overlay=sources&Metric=Temperature+anomaly&Long-run+series=false&country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~OWID_NAM~South+Cascade+Glacier~Wolverine+Glacier~Hawaii~Arctic+Ocean">https://ourworldindata.org/explorers/climate-change?time
+                    =1850..latest&overlay=sources&Metric=Temperature+anomaly&
+                    Long-run+series=false&country=OWID_WRL~ATA~Gulkana+Gl
+                    acier~Lemon+Creek+Glacier~OWID_NAM~South+Cascade+Gl
+                    acier~Wolverine+Glacier~Hawaii~Arctic+Ocean</a></br>
+                    [27.03.2026]</br></br>
+                    Abbildung 23</br>
+                    Our World in Data, Global warming: annual temperature
+                    anomaly [Screenshot, Learn more about this data], 2026.</br>
+                    <a href="https://ourworldindata.org/explorers/climate-change?time=1850..latest&overlay=sources&Metric=Temperature+anomaly&Long-run+series=false&country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~OWID_NAM~South+Cascade+Glacier~Wolverine+Glacier~">https://ourworldindata.org/explorers/climate-change?time
+                    =1850..latest&overlay=sources&Metric=Temperature+anomaly&
+                    Long-run+series=false&country=OWID_WRL~ATA~Gulkana+Gl
+                    acier~Lemon+Creek+Glacier~OWID_NAM~South+Cascade+Gl
+                    acier~Wolverine+Glacier~</a></br></br></p>
+                <h1 id="8-4">8.4 Hilfsmittelverzeichnis</h1>
+                <p>Claude (Anthropic), Modell: Claude Sonnet 4.6 </br>
+                    <a href="https://claude.ai/">https://claude.ai/</a></br>
+                    Grammatikalische und stilistische Überarbeitung von Textpassagen
+                    </br></br>
+                    DeepL Translator (DeepL SE)</br>
+                    Übersetzung fremdsprachiger Quellen</br></br>
+                    Gemini (Google), Modell: Gemini 3</br>
+                    <a href="https://gemini.google.com/app">https://gemini.google.com/app</a></br>
+                    Literaturrecherche</br>
+                    Grammatikalische und stilistische Überarbeitung von Textpassagen</p>
+            </article>
+            <div class="section"></div>
+
+            
+            <aside class="sidebar sidebar--right is-collapsed" id="notes">
+                <div class="sidebar__inner">
+                    <button class="sidebar__arrow sidebar__arrow--right" data-label="Bibliografie">Bibliografie ←</button>
+                
+                    <ul class="sidebar__nav sidebar__nav--dark">
+                        <li><a id="src-boyd">Boyd, Danah, und Kate Crawford. *"CRITICAL QUESTIONS FOR BIG DATA: Provocations for a Cultural, Technological, and Scholarly Phenomenon"*. Information, Communication & Society 15, Nr. 5 (2012): 662–79.</a></li>
+                        <li><a id="src-cairo">Cairo, Alberto. *The Functional Art: An Introduction to Information Graphics and Visualization*. New Riders, 2013.</a></li>
+                        <li><a id="src-criado">Criado-Perez, Caroline. *Invisible Women: Exposing Data Bias in a World Designed for Men*. Vintage, 2020.</a></li>
+                        <li><a id="src-daston">Daston, Lorraine, und Peter Galison. *Objektivität*. Erste Auflage. Übersetzt von Christa Krüger. suhrkamp taschenbuch wissenschaft 2458. Suhrkamp, 2024.</a></li>
+                        <li><a id="src-dignazio-2020">D'Ignazio, Catherine, und Lauren F. Klein. *Data Feminism*. Strong Ideas. The MIT Press, 2020.</a></li>
+                        <li><a id="src-gauguin">Gauguin, Jan. *Designing Diagrams: Making Information Accessible through Design*. BIS Publ, 2011.</a></li>
+                        <li><a id="src-hil">Hil, Darjan, und Nicole Lachenmeier. *Visualizing complexity: Handbuch modulares Informationsdesign*. Birkhäuser, 2022.</a></li>
+                        <li><a id="src-kennedy">Kennedy, Helen, Wibke Weber, und Martin Engebretsen. *"Data Visualization and Transparency in the News"*. In Data Visualization in Society, 1. Aufl., von Martin Engebretsen und Helen Kennedy. Routledge, 2025.</a></li>
+                        <li><a id="src-kirk">Kirk, Andy. *Data Visualisation: A Handbook for Data Driven Design*. SAGE, 2016.</a></li>
+                        <li><a id="src-klanten">Klanten, Robert, Hrsg. *Data Flow: Visualising Information in Graphic Design*. 5. print. Gestalten, 2011.</a></li>
+                        <li><a id="src-klein-2024">Klein, Lauren, und Catherine D'Ignazio. *"Data Feminism for AI"*. The 2024 ACM Conference on Fairness Accountability and Transparency, 3. Juni 2024, 100–112.</a></li>
+                        <li><a id="src-lima">Lima, Manuel. *Visual Complexity: Mapping Patterns of Information*. Princeton Architectural Press, 2011.</a></li>
+                        <li><a id="src-manovich">Manovich, Lev. *"What Is Visualisation?"* Visual Studies 26, Nr. 1 (2011): 36–49.</a></li>
+                        <li><a id="src-mazza">Mazza, Riccardo, Hrsg. *Introduction to Information Visualization*. SpringerLink Bücher. Springer London, 2009.</a></li>
+                        <li><a id="src-munzner">Munzner, Tamara. *Visualization Analysis & Design*. With Éamonn Maguire. AK Peters Visualization Series. CRC Press, 2015.</a></li>
+                        <li><a id="src-pontis">Pontis, Sheila, und Michael Babwahsingh. *Information Design Unbound: Key Concepts and Skills for Making Sense in a Changing World*. Bloomsbury Visual Arts, 2024.</a></li>
+                        <li><a id="src-rendgen">Rendgen, Sandra, Julius Wiedemann, David Rumsey, Michael Friendly, Michael A. Stoll, und Scott Klein. *History of Information Graphics*. Taschen, 2019.</a></li>
+                        <li><a id="src-tufte-2018">Tufte, Edward R. *The Visual Display of Quantitative Information*. Second edition, Tenth printing, April 2018. Graphics Press, 2018.</a></li>
+                        <li><a id="src-tufte-2005">Tufte, Edward R. *Visual Explanations: Images and Quantities, Evidence and Narrative*. Graphics Press, 2005.</a></li>
+                        <li><a id="src-turilli">Turilli, Matteo, und Luciano Floridi. *"The Ethics of Information Transparency"*. Ethics and Information Technology 11, Nr. 2 (2009): 105–12.</a></li>
+                        <li><a id="src-ware">Ware, Colin. *Information Visualization: Perception for Design*. 3d edition. Interactive Technologies. Morgan Kaufmann, 2013.</a></li>
+                        <li><a id="src-zhang">Zhang, Yixuan, Yifan Sun, Lace Padilla, Sumit Barua, Enrico Bertini, und Andrea G. Parker. *"Mapping the Landscape of COVID-19 Crisis Visualizations"*. Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems, 6. Mai 2021, 1–23.</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-header__toggle-space"></div>
+        <div class="site-header__nav"></div>
+        <div class="site-header__content">
+            <a href="01-februar.html" class="header__back">← Februar: Themenfindung</a>
+        </div>
+        <div class="site-header__aside">
+            <a href="03-april.html" class="header__next">April: Visuelle Grundlagen →</a>
+        </div>
+        <div class="site-header__toggle-space"></div>
+    </footer>
+
+
+
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
