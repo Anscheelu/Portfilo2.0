@@ -44,32 +44,11 @@ body {
 
 
 
-.index-sidebar-meta__spacer {
-    margin-bottom: 0.65em !important;
-    list-style: none;
-}
-
-.index-wrap {
-    padding: 33vh 48px 96px calc(25% + 48px);
-}
-
-.index-meta {
-    font-size: 0.6rem;
-    font-family: 'FreigeistNeue', sans-serif;
-    color: rgba(26, 26, 26, 0.4);
-    margin-bottom: 8px;
-}
 
 .page--index #nav .sidebar__inner,
 .page--index .informationen {
     opacity: 0;
-    transition: opacity 0.6s ease;
-}
-
-.page--index .content > h1,
-.page--index .content > p {
-    opacity: 0;
-    transition: opacity 0.6s ease;
+    transition: opacity 0.35s ease;
 }
 
 .index-entry {
@@ -77,7 +56,7 @@ body {
     text-decoration: none;
     color: #1a1a1a;
     /* border-top: 1px solid #1a1a1a; */
-    padding-bottom: 20px;
+    padding-bottom: clamp(0.45em, 2.5vw, 0.65em);
     transition: opacity 0.15s;
 }
 
@@ -114,11 +93,9 @@ display: flex;
     padding: 8px 48px;
     position: sticky;
     top: 0;
-    z-index: 100; /* WICHTIG: Muss sehr hoch sein, damit er alles verdeckt */
+    z-index: 100; 
     background: #f0f0ee;
     margin-bottom: 2px;
-    
-    /* DER TRICK: Ein solider, 60px hoher Block direkt unter dem Header */
     box-shadow: 0 60px 0 0 #f0f0ee;
 }
 
@@ -178,10 +155,6 @@ display: flex;
     text-align: left;
 }
 
-.site-header__content:has(.header__dropdown.is-open) .header__breadcrumb {
-    opacity: 0;
-}
-
 .header__breadcrumb:hover {
     color: #1a1a1a;
 }
@@ -228,41 +201,15 @@ display: flex;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    visibility: hidden;
-    transition: visibility 0.35s;
-}
-
-.header__dropdown.is-open {
     visibility: visible;
 }
 
 .header__dropdown li {
-    opacity: 0;
-}
-
-/* hover mode: items instantly visible, scramble handles the effect */
-.header__dropdown.is-open--hover li {
     opacity: 1;
 }
 
-/* click mode: title slides down, then others fade in */
-.header__dropdown.is-open--click li:has(a[aria-current="page"]) {
-    animation: dropdown-title-in 0.22s ease forwards;
-}
-
-.header__dropdown.is-open--click li:not(:has(a[aria-current="page"])) {
-    animation: dropdown-items-in 0.2s ease forwards;
-    animation-delay: 0.22s;
-}
-
-@keyframes dropdown-title-in {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@keyframes dropdown-items-in {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.site-header__content:has(.header__dropdown) .header__breadcrumb {
+    display: none;
 }
 
 .header__dropdown a {
@@ -441,14 +388,8 @@ display: flex;
     vertical-align: super;
 }
 
-@keyframes src-flash {
-    0%   { color: inherit; }
-    15%  { color: #7ab8f5; }
-    100% { color: inherit; }
-}
-
-.src--flash {
-    animation: src-flash 1.2s ease-out forwards;
+.src--active {
+    color: #7ab8f5 !important;
 }
 
 .sidebar__nav {
@@ -459,6 +400,8 @@ display: flex;
     text-decoration: none;
     color: rgba(26, 26, 26, 0.35);
     transition: color 0.15s;
+    letter-spacing: 0.03em;
+    line-height: clamp(1.35em, 2.5vw, 1.45em);
 }
 
 .sidebar__nav a:hover {
@@ -470,13 +413,18 @@ display: flex;
 }
 
 .sidebar__nav li {
-    margin-bottom: 0.65em;
+    line-height: clamp(1.35em, 2.5vw, 1.45em);
+    margin-bottom: 1em;
 }
 
 .sidebar__nav ul {
     list-style: none;
     padding-left: 1em;
     margin-top: 0.3em;
+}
+
+.sidebar__nav ul li {
+    margin-bottom: 0.2em;
 }
 
 .sidebar__nav--dark li {
@@ -594,11 +542,12 @@ p.footnote.is-visible {
     -webkit-hyphenate-limit-after: 3;
     -webkit-hyphenate-limit-before: 3;
     hyphenate-limit-chars: 6 3 3;
-    line-height: clamp(1.35em, 2.5vw, 1.65em);
+    -webkit-hyphenate-limit-lines: 3;
+    hyphenate-limit-lines: 3;
+    line-height: clamp(1.35em, 2.5vw, 1.45em);
     margin-bottom: 1.5em;
     word-spacing: -0.07em;
     overflow-wrap: break-word;
-    word-break: break-word;
 }
 
 
@@ -662,11 +611,6 @@ p.footnote.is-visible {
     align-items: end;
 }
 
-.abb-image-group--4col {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: end;
-}
 
 .abb-image-group--equal .abb-image {
     background: white;
