@@ -136,6 +136,15 @@ document.querySelectorAll('.index-entry').forEach(entry => {
     entry.addEventListener('mouseleave', ctrl.restore);
 });
 
+// ── Footer nav scramble ──────────────────────────────────────────────────────
+
+document.querySelectorAll('.footer__back, .footer__next').forEach(el => {
+    const ctrl = attachScramble(el);
+    if (!ctrl) return;
+    el.addEventListener('mouseenter', () => { ctrl.restore(); ctrl.scramble(); });
+    el.addEventListener('mouseleave', ctrl.restore);
+});
+
 // ── Header nav scramble ──────────────────────────────────────────────────────
 
 document.querySelectorAll('.header__back, .header__next, .header__breadcrumb').forEach(el => {

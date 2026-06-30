@@ -132,6 +132,23 @@ display: flex;
     text-overflow: ellipsis;
 }
 
+.footer__back,
+.footer__next {
+    text-decoration: none;
+    color: rgba(26, 26, 26, 0.35);
+    font-family: 'FreigeistNeue', sans-serif;
+    transition: color 0.15s;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.footer__next{
+    display: block;
+    text-align: right;
+}
+
 .header__next {
     display: block;
     text-align: right;
@@ -549,6 +566,7 @@ p.footnote.is-visible {
     word-spacing: -0.07em;
     overflow-wrap: break-word;
 }
+
 
 
 .abb-tooltip {
