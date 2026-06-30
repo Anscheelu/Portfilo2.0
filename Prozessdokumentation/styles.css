@@ -563,7 +563,7 @@ p.footnote.is-visible {
     hyphenate-limit-lines: 3;
     line-height: clamp(1.35em, 2.5vw, 1.45em);
     margin-bottom: 1.5em;
-    word-spacing: -0.07em;
+    word-spacing: -0.01em;
     overflow-wrap: break-word;
 }
 
